@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* header #heading {
+  color: orange;
+}
+
+#heading {
+  color: green;
+} */
+
+.title {
+  color: orange;
+}
+
+.heading {
+  color: red;
+}
+
+h1 {
+  color: #141010;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 20px;
+}
+
+h2 {
+  color: #111827;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h3 {
+  color: #111827;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+p {
+  color: #374151;
+  line-height: 1.75;
+}
+
+header p {
+  text-align: center;
+}
+
+/* h1,
+h2,
+h3,
+p,
+ul {
+  font-family: "Poppins", Arial, sans-serif;
+} */
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+/* li {
+  font-family: "Poppins", Arial, sans-serif;
+  color: #374151;
+  line-height: 1.75;
+} */
+
+ul {
+  color: #374151;
+  line-height: 1.75;
+}
+
+/* nav ul li {
+  list-style: none;
+} */
+
+nav li a:hover {
+  color: green;
+}
+
+nav li a:active {
+  color: pink;
+}
+
+nav li a:focus {
+  font-size: 30px;
+}
+
+/* article section:first-child h2 {
+  color: orange;
+}
+
+article section:last-child h2 {
+  color: brown;
+} */
+
+/* article section:nth-child(odd) h2 {
+  color: orange;
+} */
+
+/* [class="html"] {
+  font-weight: 600;
+} */
+
+/* [class="text"] {
+  text-decoration: underline;
+} */
+
+.html {
+  font-weight: 600;
+}
+
+.text {
+  text-decoration: underline;
+}
+
+/* #html {
+  font-weight: 600;
+}
+
+#text {
+  text-decoration: underline;
+} */
