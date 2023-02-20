@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  /* min-height: 300vh; */
+  padding-top: 150px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* header #heading {
+  color: orange;
+}
+
+#heading {
+  color: green;
+} */
+
+/* .title {
+  color: orange;
+} */
+
+/* .heading {
+  color: greenyellow;
+} */
+
+h1 {
+  position: relative;
+  color: rgb(20, 16, 16);
+  font-size: 36px;
+  font-weight: 700;
+  /* text-align: center; */
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 24px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  color: #111827;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+
+h3 {
+  display: inline-block;
+  color: #111827;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  /* width: 200px;
+  height: 200px; */
+}
+
+p {
+  color: #374151;
+  line-height: 1.75;
+}
+
+article ul {
+  padding-left: 26px;
+}
+
+header {
+  margin-bottom: 48px;
+}
+
+header p {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+article section:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+article section > div:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+article p {
+  margin-bottom: 20px;
+}
+
+article li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* h1,
+h2,
+h3,
+p,
+ul {
+  font-family: "Poppins", Arial, sans-serif;
+} */
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+/* li {
+  font-family: "Poppins", Arial, sans-serif;
+  color: #374151;
+  line-height: 1.75;
+} */
+
+ul {
+  color: #374151;
+  line-height: 1.75;
+}
+
+/* nav ul li {
+  list-style: none;
+} */
+
+nav li a {
+  /* display: inline-block; */
+  color: #141010;
+
+  /* transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  transition-delay: 2s; */
+
+  transition: all 0.3s;
+}
+
+nav li a:hover {
+  color: green;
+}
+
+nav li a:active {
+  color: pink;
+}
+
+nav li a:focus {
+  color: orange;
+}
+
+/* article section:first-child h2 {
+  color: orange;
+}
+
+article section:last-child h2 {
+  color: brown;
+} */
+
+/* article section:nth-child(odd) h2 {
+  color: orange;
+} */
+
+/* [class="html"] {
+  font-weight: 600;
+} */
+
+/* [class="text"] {
+  text-decoration: underline;
+} */
+
+.html {
+  font-weight: 600;
+}
+
+.text {
+  text-decoration: underline;
+}
+
+/* #html {
+  font-weight: 600;
+}
+
+#text {
+  text-decoration: underline;
+} */
+
+footer {
+  text-align: center;
+  /* padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px; */
+
+  /* padding: 24px 24px 24px 24px; */
+  padding: 24px;
+
+  /* border-width: 1px;
+  border-top-style: solid;
+  border-color: #e5e7eb; */
+
+  border-top: 1px solid #e5e7eb;
+  margin-top: 24px;
+}
+
+.author {
+  font-weight: 700;
+}
+
+.item {
+  position: relative;
+  width: 400px;
+}
+
+.item-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+h1::before {
+  content: "Hot";
+  position: absolute;
+  top: 0;
+  right: 0;
+  translate: 50% -50%;
+
+  display: block;
+  font-size: 12px;
+  background-color: red;
+  color: #fff;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+h1:hover::before {
+  /* scale: 1.5; */
+  /* rotate: 20deg; */
+  transform: skew(-30deg);
+}
+
+h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s;
+}
+
+h1:hover::after {
+  width: 100%;
+}
