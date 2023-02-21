@@ -282,3 +282,8 @@ h1::after {
 h1:hover::after {
   width: 100%;
 }
+
+nav li {
+  display: inline-block;
+  background-color: green;
+}
