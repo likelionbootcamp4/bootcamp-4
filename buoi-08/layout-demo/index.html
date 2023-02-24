@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      * {
+        margin: 0;
+      }
+
+      .app-container {
+        max-width: 1600px;
+        margin: 0 auto;
+        background-color: #ccc;
+      }
+
+      .sidebar {
+        background-color: green;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 300px;
+        transition: 0.3s;
+      }
+
+      main {
+        height: 300vh;
+        background-color: orange;
+        margin-left: 300px;
+        transition: all 0.3s;
+      }
+
+      @media (max-width: 992px) {
+        .sidebar {
+          transform: translateX(-100%);
+        }
+
+        main {
+          margin-left: 0;
+          /* background-color: blue; */
+        }
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <aside class="sidebar">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+        laborum, qui incidunt ad magnam dicta voluptatibus explicabo amet eaque
+        voluptate nisi libero omnis obcaecati aliquid sint minima et cumque quia
+        eveniet quae voluptatum harum. Et, eligendi dolorem! Dolorem soluta est
+        nihil minus, dolores odit laudantium iure quaerat nemo aliquid possimus?
+      </aside>
+      <main>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, ipsa
+        quam! Atque, assumenda. Libero iste alias perspiciatis quasi eum
+        deleniti doloribus! Similique, deleniti ad sint quia ex suscipit omnis
+        accusamus quo iure temporibus molestias soluta. Natus, in placeat
+        deserunt labore voluptatibus temporibus tenetur ea repellat possimus,
+        eos officiis laboriosam sequi!
+      </main>
+    </div>
+  </body>
+</html>
