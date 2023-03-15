@@ -262,3 +262,92 @@ while (isRuning) {
     isRuning = false;
   }
 }
+
+// function double(x) {
+//   return x * 2;
+// }
+
+// const newArr = arr.map(double);
+
+// console.log(newArr);
+
+// newArray = [2]
+// newArray = [2,4]
+// newArray = [2,4, 6]
+// newArray = [2,4, 6, 8]
+
+// function map2(arr, cb) {
+//   const newArray = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     newArray.push(cb(arr[i]));
+//   }
+
+//   return newArray;
+// }
+
+// const result2 = map2(arr, function (num) {
+//   return num * 2;
+// });
+
+// console.log(result2);
+
+// function over3(element) {
+//   return element >= 3;
+// }
+
+// const result3 = arr.filter(over3);
+// console.log(result3);
+
+// newArray = []
+// newArray = []
+// newArray = [3]
+// newArray = [3, 4]
+
+function filter2(arr, cb) {
+  const newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (cb(arr[i])) {
+      console.log(arr[i]);
+      newArray.push(arr[i]);
+    }
+  }
+
+  return newArray;
+}
+
+const arr = [1, 2, 3, 4];
+
+function over3(element) {
+  return element >= 3;
+}
+const result4 = filter2(arr, over3);
+
+console.log(result4);
+
+const total = arr.reduce(function (total, element) {
+  return total + element;
+}, 0);
+
+console.log(total);
+
+function reduce2(arr, cb, initialValue) {
+  let accum = initialValue;
+  for (let i = 0; i < arr.length; i++) {
+    accum = cb(accum, arr[i]);
+  }
+  return accum;
+} 
+
+
+const result5 = reduce2([1,2,3,4], function (total, num) {
+  return total * num
+}, 1)
+
+console.log(result5)
+
+
+// accum = 1
+// accum = 1
+// accum = 2
+// accum = 6
+// accum = 24
