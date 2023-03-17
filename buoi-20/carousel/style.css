@@ -1,0 +1,90 @@
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+button {
+  display: block;
+  background-color: inherit;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+  border-radius: 20px;
+
+  display: flex;
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  flex-basis: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  padding: 16px;
+  border-radius: 9999px;
+  border: 1px solid #000;
+  background-color: #fff;
+
+  position: absolute;
+  top: 50%;
+}
+
+.carousel-control-prev {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-control-next {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.carousel-indicators {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-indicator {
+  display: block;
+  padding: 6px;
+  background-color: #ccc;
+  border-radius: 9999px;
+}
