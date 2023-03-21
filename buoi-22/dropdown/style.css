@@ -1,0 +1,63 @@
+svg {
+  height: 24px;
+  width: 24px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  display: inline-block;
+  font: inherit;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  border: 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #146c94;
+  color: #fff;
+  border-radius: 6px;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  padding: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: none;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 4px 16px;
+}
+
+.dropdown-item:hover {
+  background-color: #ccc;
+}
