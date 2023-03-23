@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" class="title" />
+    <button class="btn">Add</button>
+    <h1></h1>
+    <script>
+      const heading = document.querySelector("h1");
+      const title = document.querySelector(".title");
+      const btn = document.querySelector(".btn");
+
+      btn.addEventListener("click", setItemInStorage);
+      const arr = [1, 2, 3];
+      function setItemInStorage() {
+        localStorage.setItem("title", JSON.stringify(arr));
+      }
+
+      const strArr = localStorage.getItem("title");
+      const newArr = JSON.parse(strArr);
+      console.log(newArr);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .toast {
+        position: fixed;
+        top: 20px;
+        right: 0;
+        transform: translateX(100%);
+        min-width: 300px;
+        padding: 20px;
+        border: 1px solid green;
+        transition: 0.3s;
+      }
+
+      .toast.show {
+        transform: translateX(0);
+        right: 20px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="btn">Show Toast</button>
+    <div class="toast">
+      <p>Delete successfully!</p>
+    </div>
+
+    <script>
+      const btn = document.querySelector(".btn");
+      const toast = document.querySelector(".toast");
+
+      btn.addEventListener("click", showToast);
+      function showToast() {
+        toast.classList.add("show");
+
+        setTimeout(removeToast, 3000);
+
+        function removeToast() {
+          toast.classList.remove("show");
+        }
+      }
+    </script>
+  </body>
+</html>
