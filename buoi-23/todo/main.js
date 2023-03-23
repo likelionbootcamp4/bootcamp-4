@@ -3,6 +3,7 @@ const addBtn = document.querySelector("#addBtn");
 const taskContainer = document.querySelector("#task-container");
 const deleteToast = document.querySelector("#delete-toast");
 
+// Get tasks from localStorage
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 updateTaskContainer(tasks);
 
