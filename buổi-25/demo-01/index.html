@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const person1 = {
+      //     name: "Huy",
+      //     age: 20,
+      //     calcBirth: function () {
+      //       return 2023 - this.age;
+      //     },
+      //   };
+
+      //   const person2 = {
+      //     name: "Luu",
+      //     age: 15,
+      //     calcBirth: function () {
+      //       return 2023 - this.age;
+      //     },
+      //   };
+
+      //   console.log(person1.calcBirth === person2.calcBirth);
+
+      class Person {
+        constructor(name, age) {
+          this.name = name;
+          this.age = age;
+        }
+
+        calcBirth() {
+          return 2023 - this.age;
+        }
+
+        calcAge() {
+          this.age = this.age + 1;
+        }
+      }
+
+      class LikelionStudent extends Person {
+        constructor(name, age, course) {
+          super(name, age);
+          this.course = course;
+        }
+      }
+
+      const student1 = new LikelionStudent("Phuong", 25, "frontend");
+      const student2 = new LikelionStudent("Vinh", 23, "backend");
+      const student3 = new LikelionStudent("Hoang Anh", 50, "frontend");
+
+      console.log(student1.calcBirth());
+      student1.calcAge();
+      console.log(student1.age);
+
+      //   class Array {
+      //     constructor(...items) {
+      //       this.items = items;
+      //       this.length = this.items.length;
+      //     }
+
+      //     push(newItem) {
+      //       this.items[this.length] = newItem;
+      //       this.length++;
+      //       return this.length;
+      //     }
+      //   }
+
+      //   const newArr = new Array(1, 2, 3, 4);
+      //   console.log(newArr);
+
+      //   function sum(num1, num2) {
+      //     return num1 + num2;
+      //   }
+
+      //   function Person(name, age) {
+      //     this.name = name;
+      //     this.age = age;
+      //     // this.calcBirth = function () {
+      //     //   return 2023 - this.age;
+      //     // };
+      //   }
+
+      //   Person.prototype.calcBirth = function () {
+      //     return 2023 - this.age;
+      //   };
+    </script>
+  </body>
+</html>
