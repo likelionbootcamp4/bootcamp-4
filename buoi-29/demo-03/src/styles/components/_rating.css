@@ -1,0 +1,13 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+
+  font-size: 1rem;
+  line-height: calc(30 / 16);
+  color: var(--heading-color);
+}
+
+.rating > .icon {
+  --icon-size: 1em;
+}

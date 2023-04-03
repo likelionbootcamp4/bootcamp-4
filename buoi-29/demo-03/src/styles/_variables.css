@@ -1,0 +1,31 @@
+:root {
+  /* Color */
+  --primary-color: #f53838;
+  --heading-color: #0b132a;
+  --body-color: #4f5665;
+  --bg-color: #fff;
+
+  /* Typograohy */
+  --heading-ff: "Rubik", sans-serif;
+  --body-ff: "Rubik", sans-serif;
+
+  --fs-base: 1rem;
+  --lh-base: calc(30 / 16);
+
+  /* Border radius */
+  --rounded: 0.625rem;
+  --rounded-lg: 3.125rem;
+  --rounded-full: 9999px;
+
+  /* Border */
+  --border: 2px solid #ddd;
+
+  /* Container */
+  --container-padding: 1.875rem;
+
+  /* Layout */
+  --column-gap: 1.875rem;
+
+  /* Transition */
+  --transition: all 0.3s ease;
+}

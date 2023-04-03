@@ -1,0 +1,39 @@
+.features-container {
+  --grid-cols: 2;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  gap: var(--column-gap);
+  padding: 6rem 0;
+
+  align-items: center;
+  justify-items: end;
+}
+
+.feature-content {
+  max-width: 25.2rem;
+}
+
+.feature-heading {
+  margin-bottom: 1.25rem;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    --grid-cols: 1;
+    padding: 3rem 0;
+
+    justify-items: center;
+  }
+}

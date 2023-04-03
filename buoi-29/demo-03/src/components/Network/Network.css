@@ -1,0 +1,30 @@
+.network-container {
+  padding: 4rem 0;
+}
+
+.network-img {
+  height: 50vh;
+  margin-top: 8rem;
+}
+
+.network-img img {
+  height: 100%;
+}
+
+.network-brand-list {
+  display: flex;
+  align-items: center;
+  gap: var(--column-gap);
+  filter: grayscale(0.8);
+  opacity: 0.2;
+}
+
+.network-brand {
+  flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .network-img {
+    margin-top: 3rem;
+  }
+}

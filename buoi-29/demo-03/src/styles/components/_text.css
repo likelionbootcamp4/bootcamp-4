@@ -1,0 +1,19 @@
+.text-sm {
+  font-size: 0.875rem;
+  line-height: calc(30 / 14);
+}
+
+.text-md {
+  font-size: 1rem;
+  line-height: calc(30 / 16);
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: calc(30 / 18);
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: calc(30 / 20);
+}

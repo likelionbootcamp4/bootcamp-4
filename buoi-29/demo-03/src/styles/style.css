@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Base */
+@import url("_variables.css");
+@import url("_ultilities.css");
+@import url("_base.css");
+
+/* Components */
+@import url("components/_container.css");
+@import url("components/_heading.css");
+@import url("components/_text.css");
+@import url("components/_button.css");
+@import url("components/_brand.css");
+@import url("components/_shadow.css");
+@import url("components/_icon.css");
+@import url("components/_rating.css");
+@import url("components/_slider.css");

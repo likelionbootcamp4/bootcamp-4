@@ -1,0 +1,22 @@
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.brand:hover .brand-img {
+  transform: rotate(-25deg);
+}
+
+.brand-img {
+  width: 2.25rem;
+  height: 2.25rem;
+  transition: var(--transition);
+}
+
+.brand-title {
+  font-size: 1.25rem;
+  line-height: 1;
+  color: var(--heading-color);
+  font-weight: 500;
+}

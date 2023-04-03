@@ -1,0 +1,28 @@
+.header-container {
+  --grid-cols: 2;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  gap: var(--column-gap);
+  padding: 2.75rem 0;
+  align-items: center;
+}
+
+.header-text {
+  margin-bottom: 3.125rem;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    --grid-cols: 1;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  .header-container .btn {
+    margin: 0 auto;
+  }
+
+  .header-text {
+    margin-bottom: 2rem;
+  }
+}
