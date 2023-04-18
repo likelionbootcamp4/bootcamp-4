@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 import Products from "./pages/Products";
 import RootLayout from "./components/RootLayout";
 import ProductDetail from "./pages/ProductDetail";
+import ProductAdd from "./pages/ProductAdd";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "products/:productId",
         element: <ProductDetail />,
+      },
+      {
+        path: "products/new",
+        element: <ProductAdd />,
       },
     ],
   },
