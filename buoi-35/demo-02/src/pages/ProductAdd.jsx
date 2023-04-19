@@ -1,3 +1,4 @@
+import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 
@@ -5,14 +6,21 @@ export default function ProductAdd() {
   const {
     register,
     handleSubmit,
+    reset,
     watch,
     formState: { errors },
   } = useForm();
 
+  const productAddMutation = useMutation({
+    mutationFn: (newProduct) =>
+      axios.post("http://localhost:3000/pro", newProduct),
+    onSuccess: () => {
+      reset();
+    },
+  });
+
   function handleProductAdd(data) {
-    axios
-      .post("http://localhost:3000/products", data)
-      .then((res) => console.log(res.data));
+    productAddMutation.mutate(data);
   }
 
   return (
@@ -33,7 +41,15 @@ export default function ProductAdd() {
         <label>Thumbnail</label>
         <input type="text" {...register("thumbnail")} />
       </div>
-      <button>Add</button>
+      <button>{productAddMutation.isLoading ? "Adding..." : "Add"}</button>
+
+      {productAddMutation.isSuccess && (
+        <div className="text-green-500">Successfully added product!</div>
+      )}
+
+      {productAddMutation.isError && (
+        <div className="text-red-500">{productAddMutation.error.message}</div>
+      )}
     </form>
   );
 }

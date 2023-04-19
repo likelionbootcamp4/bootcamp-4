@@ -1,22 +1,11 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "iPhone 9",
-      "price": 549,
-      "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-    },
-    {
-      "id": 2,
-      "title": "iPhone X",
-      "price": 899,
-      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-    },
-    {
       "id": 3,
-      "title": "Samsung Universe 9",
+      "title": "Samsung Universe 20",
       "price": 1249,
-      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg"
+      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+      "description": ""
     },
     {
       "id": 4,
@@ -237,6 +226,34 @@
       "description": "jghjhgj",
       "thumbnail": "vhgfhgf",
       "id": 39
+    },
+    {
+      "title": "dasdasdasd",
+      "price": "20",
+      "description": "xcxzcxzcxzc",
+      "thumbnail": "https://plus.unsplash.com/premium_photo-1675826774817-fe983ceb0475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "id": 40
+    },
+    {
+      "title": "asdsdas",
+      "price": "dasdasd",
+      "description": "asdasd",
+      "thumbnail": "https://plus.unsplash.com/premium_photo-1675826774817-fe983ceb0475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "id": 41
+    },
+    {
+      "title": "ghfghgfh",
+      "price": "ghgfhgf",
+      "description": "gfhgfh",
+      "thumbnail": "fghgfh",
+      "id": 42
+    },
+    {
+      "title": "ghfghfg",
+      "price": "ghfghgf",
+      "description": "gfhgfh",
+      "thumbnail": "fghfgh",
+      "id": 43
     }
   ]
 }

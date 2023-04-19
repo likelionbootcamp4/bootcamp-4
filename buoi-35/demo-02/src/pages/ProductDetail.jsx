@@ -1,17 +1,23 @@
-import { useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 import { useParams } from "react-router-dom";
 
 export default function ProductDetail() {
   const { productId } = useParams();
-  const [product, setProduct] = useState(null);
+  const {
+    isLoading,
+    data: product,
+    error,
+    isError,
+  } = useQuery({
+    queryKey: ["products", productId],
+    queryFn: () => axios.get(`https://dummyjson.com/pro/${productId}`),
+    select: (response) => response.data,
+  });
 
-  useEffect(() => {
-    fetch(`https://dummyjson.com/products/${productId}`)
-      .then((res) => res.json())
-      .then((data) => setProduct(data));
-  }, []);
+  if (isLoading) return <div>Loading...</div>;
 
-  if (product === null) return <div>Loading...</div>;
+  if (isError) return <div className="text-red-500">{error.message}</div>;
 
   return (
     <div>
