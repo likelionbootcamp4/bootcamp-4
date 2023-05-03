@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const mongoose = require("mongoose");
 const Product = require("./models/Product");
 
@@ -17,6 +18,9 @@ mongoose.connect(DB_URI).then(() => {
 app.listen(4000, () => {
   console.log("Server is running...");
 });
+
+// CORS
+app.use(cors());
 
 // Body parsing
 app.use(express.json());
